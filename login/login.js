@@ -20,12 +20,3 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         }
     }
 });
-
-document.addEventListener('DOMContentLoaded', function() {
-    const userInput = prompt('Please enter a command:');
-    if (userInput) {
-        // Process the user input here
-        console.log('User entered command:', userInput);
-        alert('You entered: ' + userInput);
-    }
-});

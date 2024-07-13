@@ -1,0 +1,58 @@
+.modalCadastro {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modalContent{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    height: 244px;
+    width: 360px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    z-index: 1000;
+}
+
+.modalContent input{
+    display: inline;
+    font-size: 15px;
+    padding: 5px;
+    width: 80%;
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+.buttonContainer{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+}
+
+.buttonContainer input{
+    width: 45%;
+}
+
+
+.ativo{
+    display: block;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}

@@ -4,11 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="portal/portalMedico.css">
 </head>
 <body>
     <h1>Bem vindo</h1>
 
-    <a href="cadastroPaciente.html">Cadastro Paciente</a>
+    <button onclick="showModal()">Cadastrar Paciente</button>
+
+    <div class="modalCadastro">
+        <div class="modalContent">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade">
+            <label for="medicamento">Usa Medicamento:</label>
+            <input style="width: 25px;" type="checkbox" id="medicamento" name="medicamento">
+            <div class="buttonContainer">
+                <input type="button" value="Cancelar" onclick="hideModal()">
+                <input type="button" value="Cadastrar" onclick="cadastrarPaciente()">
+            </div>
+        </div>
+    </div>
 
     <table>
         <tr>
@@ -18,5 +34,7 @@
             <td>Acessar detalhes</td>
         </tr>
     </table>
+
+    <script src="portal/portalMedico.js"></script>
 </body>
 </html>
